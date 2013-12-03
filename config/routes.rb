@@ -1,5 +1,7 @@
 Group::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get "contents/investment"
   get "contents/partner"
   get "contents/companies"
