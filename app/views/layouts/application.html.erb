@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <title>Jobs</title>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div class="container">
+		<header class="row">
+			<h1 class="three columns">
+				<%= link_to(root_path) do %>
+				<%= image_tag "logo_psg.png" %>
+				<% end %>
+			</h1>
+
+			<div class="four columns">
+				<h2>Get High Returns on your Investments</h2>
+			</div>
+
+			<div class="four columns offset-by-one">
+				<div>
+					<!--  <p>Select Language</p> -->
+					<phone>CALL 0207 247 1440</phone>
+					<h3>Select Language</h3>
+				</div>
+
+			</div>
+		</header> <!--  .row -->
+	</div> <!--  .container -->
+
+	<div id="main_nav">
+		<div class="container">
+			<nav class="row">
+				<%# link_to current_user.name, "#" %>
+				<%# link_to "Add a job", new_job_path %>
+				<%# link_to "Log out", session_path, method: :delete %>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">INVESTMENT</a></li>
+					<li><a href="#">PARTNER WITH US</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">OUR COMPANIES</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav> <!--  .row -->
+		</div> <!--  .container -->
+	</div> <!--  #main_nav -->
+
+	<div class="body_background">
+		<div class="container">
+			<% flash.each do |key, value| %>
+			<div class="twelve columns flash <%= key %>"><%= value %></div>
+			<% end %>
+
+			<article class="row">
+				<%= yield %>
+			</article>
+
+			<footer>
+				<div class="footer_one">
+					<div class="eight columns">
+						<h2>About Us</h2>
+						<h4>What is Purple Stone Group?</h4>
+						<p>Purple Stone Group is a company specialized in real estate, education, marketing and multimedia. The business group, through it's independent limited companies offers a lot of products and services that reflect the high satisfaction of the costumer.</p>
+					</div>
+					<div class="four columns">
+						<h2>Join Our Affiliate Programme !</h2>
+						<p>Register in our Free Affiliate Programme and earn generous commissions from sales generated from referrals !</p>
+						<button>JOIN US</button>				
+					</div>
+				</div>
+
+				<div id="main_nav">
+					<nav class="row">
+						<%# link_to current_user.name, "#" %>
+						<%# link_to "Add a job", new_job_path %>
+						<%# link_to "Log out", session_path, method: :delete %>
+						<ul>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">INVESTMENT</a></li>
+							<li><a href="#">PARTNER WITH US</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">OUR COMPANIES</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</nav> <!--  .row -->
+				</div> <!--  #main_nav -->
+
+				<div class="footer_two">
+					<h1 class="three columns">
+						<%= link_to(root_path) do %>
+						<%= image_tag "logo_psg_white.png" %>
+						<% end %>
+					</h1>
+
+					<div class="four columns">
+						<h2>Get High Returns on your Investments</h2>
+					</div>
+
+					<div class="four columns offset-by-one">
+						<div>
+							<p>101 Whitechapel High Street<br />
+							E1 7RA, London<br />
+							0207 247 1440<br />
+							Aldgate East</p>
+						</div>
+
+					</div>
+					<div class="row">
+						
+					</div>
+					
+				</div>
+
+				<div class="row copy">
+					<p>&copy; <%= Date.today.year %> Onboard Ltd</p>
+				</div>
+			</footer>
+		</div> <!--  .container -->
+	</div>
+
+</body>
+</html>
