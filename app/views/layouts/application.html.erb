@@ -9,8 +9,8 @@
 </head>
 <body>
 
-	<div class="container">
-		<header class="row">
+	<header class="container">
+		<div class="row">
 			<h1 class="three columns">
 				<%= link_to(root_path) do %>
 				<%= image_tag "logo_psg.png" %>
@@ -23,17 +23,15 @@
 
 			<div class="four columns offset-by-one">
 				<div>
-					<!--  <p>Select Language</p> -->
 					<phone>CALL 0207 247 1440</phone>
-					<h3>Select Language</h3>
+					<!--  <p>Select Language</p> -->
+					<h3>Social Networks Icons</h3>
 				</div>
 
 			</div>
-		</header> <!--  .row -->
-	</div> <!--  .container -->
+		</div> <!--  .row -->
 
-	<div id="main_nav">
-		<div class="container">
+		<div id="main_nav">
 			<nav class="row">
 				<ul>
 					<li><%= link_to "HOME", root_path, class: "first" %></li>
@@ -44,20 +42,22 @@
 					<li><a class="last" href="#">CONTACT</a></li>
 				</ul>
 			</nav> <!--  .row -->
-		</div> <!--  .container -->
-	</div> <!--  #main_nav -->
+		</div> <!--  #main_nav -->
+
+	</header> <!--  .container -->
+
 
 	<div class="body_background">
 		<div class="container content">
 			<% flash.each do |key, value| %>
-			<div class="twelve columns flash <%= key %>"><%= value %></div>
+				<div class="twelve columns flash <%= key %>"><%= value %></div>
 			<% end %>
 
 			<article class="row">
 				<%= yield %>
 			</article>
 
-			<footer class="container">
+			<footer>
 				<div class="row">
 					<div class="footer_one">
 						<div class="seven columns about">
@@ -66,25 +66,23 @@
 							<p>Purple Stone Group is a company specialized in real estate, education, marketing and multimedia. The business group, through it's independent limited companies offers a lot of products and services that reflect the high satisfaction of the costumer.</p>
 						</div>
 						<div class="four columns offset-by-one affiliate">
-							<h2>Join Our Affiliate Programme !</h2>
+							<h2>Join Our Affiliate Programme Now!</h2>
 							<p>Register in our Free Affiliate Programme and earn generous commissions from sales generated from referrals !</p>
 							<button>JOIN US</button>				
 						</div>
 					</div>
 				</div>
 
-				<div id="main_nav">
-					<nav class="row">
-						<ul>
-							<li><%= link_to "HOME", root_path, class: "first" %></li>
-							<li><a href="#">INVESTMENT</a></li>
-							<li><a href="#">PARTNER WITH US</a></li>
-							<li><%= link_to "BLOG", posts_path %></li>
-							<li><a href="#">OUR COMPANIES</a></li>
-							<li><a class="last" href="#">CONTACT</a></li>
-						</ul>
-					</nav> <!--  .row -->
-				</div> <!--  #main_nav -->
+				<nav id="main_nav" class="row">
+					<ul>
+						<li><%= link_to "HOME", root_path, class: "first" %></li>
+						<li><a href="#">INVESTMENT</a></li>
+						<li><a href="#">PARTNER WITH US</a></li>
+						<li><%= link_to "BLOG", posts_path %></li>
+						<li><a href="#">OUR COMPANIES</a></li>
+						<li><a class="last" href="#">CONTACT</a></li>
+					</ul>
+				</nav> <!--  #main_nav --> <!--  .row -->
 
 				<div class="footer_two">
 					<h1 class="three columns">

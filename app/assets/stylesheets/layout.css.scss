@@ -7,13 +7,12 @@ $bgColour: #ffffff;
 $fontLato: 'Lato', sans-serif;
 
 body {
-  background: $bgColour;
+  background: #e6e6e6  url('body_background.jpg') repeat-x top;
   font-family: $fontLato;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5;
   color: $primaryColour;
-  padding: 10px 0;
 }
 
 a {
@@ -23,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #dc143c;
+  color: red;
 }
 
 h1 {
@@ -119,9 +118,12 @@ h4 {
 /* #Layout
 ================================================== */
 header {
-  #height: 75px;
-  #line-height: 75px;
-  vertical-align: middle;
+  padding-top: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  .row{
+    margin-top: 20px;
+  }
 }
 
 #main_nav {
@@ -133,6 +135,7 @@ background: -ms-linear-gradient($primaryColour, #000);
 background: linear-gradient($primaryColour, #000); /* Standard syntax */
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primaryColour', endColorstr='#000');
 zoom: 1;
+border-bottom: 1px solid $secondaryColour;
 }
 
 nav li a.first {
@@ -149,7 +152,6 @@ nav a {
 }
 
 .body_background {
-background: #e6e6e6  url('body_background.jpg') repeat-x top;
 margin-top: -20px;
 }
 
@@ -167,36 +169,52 @@ border-bottom: 8px solid $primaryColour;
 }
 
 .video {
-margin-top: 50px; 
+margin: 30px 0; 
 }
 
 .aweberform {
-margin-top: 30px;
+margin-top: 20px;
+color: #ffffff;
+  h3 {
+    padding: 10px 30px;
+    font-size: 1.5em;
+  }
+  h2 {
+    padding: 10px 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 }
 
 .content {
 background: #ffffff;
 }
+
 .post_details {
 padding: 30px;
 }
 
 .post_menu {
 margin-top: 30px;
+  
+  h3 {
+    border-bottom: 1px dotted $primaryColour;
+    font-weight: 700;
+    margin: 20px 20px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    padding: 6px 0;
+    margin-left: 20px;
+    list-style-type: square;
+    a {
+      padding: 20px 0;
+    }
+  }
 }
 
-.post_menu h3 {
-border-bottom: 1px dotted $primaryColour;
-}
-
-.post_menu li {
-padding: 5px 0;
-list-style-type: circle;
-}
-
-.post_menu li a {
-padding: 20px 0;
-}
 
 .footer_one {
 padding: 10px 0;
@@ -217,6 +235,47 @@ margin-bottom: 40px;
 border-bottom: 1px dotted #ffffff;
 }
 
+.affiliate {
+  border-left: 1px dotted #ffffff;
+
+  h2 {
+    padding-bottom: 20px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+
+  p {
+    color: #000000;
+  }
+}
+
+.footer_two {
+margin-top: -20px;
+padding-top: 30px;
+overflow: hidden;
+background: -webkit-gradient(linear, left top, left bottom, from($primaryColour), to($secondaryColour));
+background: -webkit-linear-gradient($primaryColour, $secondaryColour); /* For Safari */
+background: -o-linear-gradient($primaryColour, $secondaryColour); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient($primaryColour, $secondaryColour); /* For Firefox 3.6 to 15 */
+background: -ms-linear-gradient($primaryColour, $secondaryColour);
+background: linear-gradient($primaryColour, $secondaryColour); /* Standard syntax */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primaryColour', endColorstr='$secondaryColour');
+zoom: 1;
+border-bottom: 2px solid $primaryColour;
+  h2, p {
+    color: #ffffff;
+  }
+}
+
+.copy {
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
 /* Media Queries
 *********************************************/
 /* Retina */
@@ -233,7 +292,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Landscape phones and down */
 @media (min-width: 200px) and (max-width: 480px) {
-  header h2 {
+  header h2, .footer_two h2 {
   margin: 15px 0;
   padding: 20px;
   line-height: 1em;
@@ -250,7 +309,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-  header h2 {
+  header h2, .footer_two h2 {
   margin: 15px 0;
   padding: 20px;
   line-height: 1em;
@@ -268,7 +327,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  header h2 {
+  header h2, .footer_two h2 {
   border-left: 1px solid #C0C0C0;
   margin-top: 15px;
   padding: 12px 20px;
@@ -297,7 +356,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Large desktop */
 @media (min-width: 980px) and (max-width: 1199px) {
-  header h2 {
+  header h2, .footer_two h2 {
   border-left: 1px solid #C0C0C0;
   margin-top: 15px;
   padding: 12px 20px;
@@ -326,7 +385,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Extra-Large desktop */
 @media (min-width: 1200px) and (max-width: 1919px) {
-  header h2 {
+  header h2, .footer_two h2 {
   border-left: 1px solid #C0C0C0;
   margin-top: 15px;
   padding: 12px 20px;
@@ -356,7 +415,7 @@ border-bottom: 1px dotted #ffffff;
 }
 /* Extra-extra-Large desktop */
 @media (min-width: 1920px) {
-  header h2 {
+  header h2, .footer_two h2 {
   border-left: 1px solid #C0C0C0;
   margin-top: 15px;
   padding: 12px 20px;
