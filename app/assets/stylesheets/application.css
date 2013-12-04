@@ -11,4 +11,5 @@
  *= require reset
  *= require skeleton
  *= require layout
- */
+ *= require posts
+  */

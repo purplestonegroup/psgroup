@@ -9,9 +9,10 @@ Group::Application.routes.draw do
   get "contents/sitemap"
   get "contents/terms"
   get "contents/privacy"
-  resource :posts
+  
+  resources :posts
 
-  root "posts#index"
+  root "posts#home"
 
   # static pages
   get "/investment" => "contents#investment"

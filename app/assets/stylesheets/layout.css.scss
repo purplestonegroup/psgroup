@@ -1,31 +1,29 @@
-@import url(//fonts.googleapis.com/css?family=Cabin:500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic,300,300italic);
 
 // Vars
-$primaryColor: #0597FB;
-$secondaryColour: #00E5B3;
-$bgColour: #FDF6E9;
+$primaryColour: #662d91;
+$secondaryColour: #1b1464;
+$bgColour: #ffffff;
+$fontLato: 'Lato', sans-serif;
 
 body {
   background: $bgColour;
-  font-family: 'Cabin', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: $fontLato;
+  font-size: 1em;
+  font-weight: 300;
   line-height: 1.5;
-  color: $primaryColor;
+  color: $primaryColour;
   padding: 10px 0;
 }
 
 a {
-  color: $primaryColor;
+  color: $primaryColour;
   text-decoration: none;
+  font-weight: 400;
 }
 
 a:hover {
-  color: #0365a8;
-}
-
-.mid {
-  text-align: center;
+  color: #dc143c;
 }
 
 h1 {
@@ -40,437 +38,348 @@ img {
   }
 
 h2 {
-  display: inline-block;
-  border-top: 4px solid $secondaryColour;
-  border-bottom: 4px solid $secondaryColour;
-  font-size: 18px;
-  margin-bottom: 20px;
-  padding: 4px 32px;
-  float: right;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-aside h3 {
-  margin: 20px 0 10px;
-  font-size: 18px;
+h3 {
+  font-size: 1.3em;
   font-weight: 700;
-
+  line-height: 1.5;
 }
 
+h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+/* #Buttons
+================================================== */
+
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    background: $secondaryColour;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0, 0, 0, .75);
+    cursor: pointer;
+    margin: 20px 0;
+    line-height: normal;
+    padding: 8px 10px;
+    font-family: $fontLato;
+  }
+
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    color: #ffffff;
+    background: #dc143c;
+  }
+
+  .button:active,
+  button:active,
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active {
+    background: $secondaryColour;
+  }
+
+  .button.full-width,
+  button.full-width,
+  input[type="submit"].full-width,
+  input[type="reset"].full-width,
+  input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center;
+  }
+
+  /* Fix for odd Mozilla border & padding issues */
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+/* #Layout
+================================================== */
 header {
-  height: 75px;
-  line-height: 75px;
+  #height: 75px;
+  #line-height: 75px;
   vertical-align: middle;
 }
 
-nav {
-  text-align: right;
+#main_nav {
+background: -webkit-gradient(linear, left top, left bottom, from($primaryColour), to(#000));
+background: -webkit-linear-gradient($primaryColour, #000); /* For Safari */
+background: -o-linear-gradient($primaryColour, #000); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient($primaryColour, #000); /* For Firefox 3.6 to 15 */
+background: -ms-linear-gradient($primaryColour, #000);
+background: linear-gradient($primaryColour, #000); /* Standard syntax */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primaryColour', endColorstr='#000');
+zoom: 1;
+}
+
+nav li a.first {
+  border-left: none;
+}
+
+nav li a.last {
+  border-right: none;
 }
 
 nav a {
-  margin: 20px 0;
-  padding: 0 20px;
-  font-size: 18px;
-  border-left: 4px solid $secondaryColour;
+  color: #ffffff;
+  font-size: 1em;
 }
 
-nav a:first-child {
-  border-left: none;
+.body_background {
+background: #e6e6e6  url('body_background.jpg') repeat-x top;
+margin-top: -20px;
 }
 
-nav a:last-child {
-  padding-right: 0;
+section.video_form {
+overflow: hidden;
+background: -webkit-gradient(linear, left top, left bottom, from($primaryColour), to($secondaryColour));
+background: -webkit-linear-gradient($primaryColour, $secondaryColour); /* For Safari */
+background: -o-linear-gradient($primaryColour, $secondaryColour); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient($primaryColour, $secondaryColour); /* For Firefox 3.6 to 15 */
+background: -ms-linear-gradient($primaryColour, $secondaryColour);
+background: linear-gradient($primaryColour, $secondaryColour); /* Standard syntax */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primaryColour', endColorstr='$secondaryColour');
+zoom: 1;
+border-bottom: 8px solid $primaryColour;
 }
 
-.bordered {
-  border: 4px solid $secondaryColour;
-  padding: 20px;
+.video {
+margin-top: 50px; 
 }
 
-aside ul li {
-  // text-align: right;
+.aweberform {
+margin-top: 30px;
 }
 
-aside .selected {
-  color: $secondaryColour;
-  font-weight: 700;
+.content {
+background: #ffffff;
+}
+.post_details {
+padding: 30px;
 }
 
-footer {
-  text-align: center;
-  margin: 40px 0;
+.post_menu {
+margin-top: 30px;
 }
 
-div#upload_wrap{
-  display: none;
+.post_menu h3 {
+border-bottom: 1px dotted $primaryColour;
 }
 
-
-form {
-  clear: both;
+.post_menu li {
+padding: 5px 0;
+list-style-type: circle;
 }
 
-form div.input, form div.form-row {
-  margin-bottom: 20px;
+.post_menu li a {
+padding: 20px 0;
 }
 
-form label {
-  display: inline-block;
-  float: left;
-  width: 35%;
-  border: 4px solid $secondaryColour;
-  font-size: 18px;
-  padding: 4px 8px;
-  vertical-align: top;
+.footer_one {
+padding: 10px 0;
+background: #bab8d0;
+overflow: hidden;
+zoom:1;
+margin-bottom: -20px;
+border-top: 8px solid $primaryColour;
 }
 
-
-
-a.upload_override,
-input[value="submit"],
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="url"],
-textarea {
-  background: transparent;
-  background-image: none;
-  border: 4px solid $secondaryColour;
-  border-left: none;
-  outline: none;
-  width: 65%;
-  padding: 4px 8px;
-  font-size: 18px;
-  vertical-align: top;
-  color: $primaryColor;
-  margin-top: 0;
-  background-color: white;
+.about, .affiliate{
+padding: 30px;
 }
 
-input[value="submit"] {
-  border: 4px solid $secondaryColour;
+.about h2 {
+padding-bottom: 20px;
+margin-bottom: 40px;
+border-bottom: 1px dotted #ffffff;
 }
 
-input[type="file"] {
-  display: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-a.upload_override {
+/* Media Queries
+*********************************************/
+/* Retina */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+  nav li a {
   display: block;
-  float: right;
-  background: url(/assets/search.png) no-repeat 96% center white;
-
+  padding: 10px 35px;
+  border-left: none;
+  border-right: none;
+  }
+  nav li a:hover {
+  background: none;
+  }
 }
-
-form div.form-row {
-  clear: both;
-
-  label {
-    width: 100%;
-    border: none;
-    padding: 0;
+/* Landscape phones and down */
+@media (min-width: 200px) and (max-width: 480px) {
+  header h2 {
+  margin: 15px 0;
+  padding: 20px;
+  line-height: 1em;
   }
-  span {
-    display: inline-block;
-    float: left;
-    width: 35%;
-    border: 4px solid $secondaryColour;
-    font-size: 18px;
-    padding: 4px 8px;
-    vertical-align: top;
-
+  nav li a {
+  display: block;
+  padding: 10px 35px;
+  border-left: none;
+  border-right: none;
   }
-
-  &:nth-child(5) {
-
-    label:first-child {
-      width: 66.666%;
-
-      span {
-        width: 52.5%;
-      }
-
-      input {
-        width: 47.5%;
-        border-left: none;
-      }
-    }
-
-    input {
-      width: 28.3333%;
-      clear: none;
-      float: left;
-    }
-
-    span:nth-child(2) {
-      width: 5%;
-      float: left;
-      text-align: center;
-      clear: none;
-      border: 4px solid transparent;
-      border-left: none;
-      border-right: none;
-    }
-
-    input:last-child {
-      border: 4px solid $secondaryColour;
-    }
+  nav li a:hover {
+  background: none;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+  header h2 {
+  margin: 15px 0;
+  padding: 20px;
+  line-height: 1em;
+  }
+  nav li a {
+  display: block;
+  padding: 10px 35px;
+  border-left: none;
+  border-right: none;
+  }
+  nav li a:hover {
+  background: none;
   }
 
 }
-
-form div.form-row:before,
-form div.form-row:after,
-form div.input:before,
-form div.input:after  {
-    content: "";
-    display: table;
-}
-form div.form-row:after,
-form div.input:after {
-    clear: both;
-}
-form div.form-row,
-form div.input {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-button p,
-input[type="submit"] {
-  background: transparent;
-  background-image: none;
-  border: 4px solid $secondaryColour;
-  color: $primaryColor;
-  padding: 4px 10px;
-  font-size: 18px;
-  cursor: pointer;
-  float: right;
-  clear: both;
-  outline: none;
-  margin: 0;
-  
-  &:hover {
-    background: $secondaryColour;
-    color: white;
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  header h2 {
+  border-left: 1px solid #C0C0C0;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  line-height: 1em;
   }
-}
-
-button p {
-  vertical-align: center;
-}
-
-input.location_search {
-  width: 100%;
-  background: url(/assets/search.png) no-repeat 96% center;
-  border: 4px solid $secondaryColour;
-}
-
-
-abbr {
-  float: right;
-}
-
-span.error {
-  display: inline-block;
-  padding: 5px 12px;
-  color: #E55D2E;
-}
-
-::-webkit-input-placeholder {
-  color: $primaryColor;
-}
-
-.flash {
-  background: $secondaryColour;
-  color: #fff;
-  padding: 10px 20px;
-  margin-bottom: 40px;
-  font-size: 18px;
-}
-
-.flash.error {
-  background: #E55D2E;
-}
-
-.map {
-  height: 300px;
-  border-top: 5px solid $secondaryColour;
-  border-bottom: 5px solid $secondaryColour;
-}
-
-a.button {
-  display: inline-block;
-  border: 4px solid $secondaryColour;
-  padding: 4px 10px;
-  text-align: center;
-  font-size: 18px;
-  margin: 5px 10px;
-
-  &:hover {
-    background: $secondaryColour;
-    color: white;
-  }
-}
-
-.social {
-
-  margin-top: 20px;
-
-  a.button {
-    margin: 5px 2px;
-  }
-}
-
-
-
-// Place all the styles related to the jobs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-$primaryColor: #0597FB;
-$secondaryColour: #00E5B3;
-$bgColour: #FDF6E9;
-
-.jobslist {
-  clear: both;
-}
-
-.single_job {
-  margin-bottom: 20px;
-  img {
-    width: 60px;
-    margin-top: 3px;
-    float: left;
-  }
-}
-
-.job_show {
-
-  margin-top: 40px;
-
-  .company_logo {
-    margin: 0 auto 20px;
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  h3 {
-    margin-top: 23px;
-  }
-
-  h3, h4 {
-    font-size: 21px;
-    letter-spacing: 0.045em;
-    text-transform: capitalize;
-  }
-
-  blockquote {
-    border-top: 5px solid $secondaryColour;
-    border-bottom: 5px solid $secondaryColour;
-    padding: 40px 66px; 
-    font-size: 20px;
-    line-height: 1.3em;
-    letter-spacing: 0.03em;
-    margin: 20px 0 40px;
-
-    background-image: url(/assets/quote-left.png), url(/assets/quote-right.png);
-    background-position: 0 20%, 100% 80%;
-    background-repeat: no-repeat;
-  }
-
-  p {
-    margin: 20px 0;
-  }
-
-  ul {
-    margin: 20px 0;
-  }
-
-  li {
-    background: url(/assets/bullet.png) 0 8px no-repeat;
-    padding-left: 30px;
-  }
-
-}
-
-
-.job_details {
+  nav li a {
+  clear: none;
   float: left;
-  padding-left: 65px;
-  padding-right: 20px;
-  width: 335px;
-}
+  display: block;
+  padding: 10px 15px;
+  border-left: 1px solid $primaryColour;
+  border-right: 1px solid #000;
+  }
 
-.featured {
-  background: url(/assets/star.png) 20px 20px no-repeat;
+  nav li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from($secondaryColour), to($primaryColour));
+  background: -webkit-linear-gradient($secondaryColour, $primaryColour); /* For Safari */
+  background: -o-linear-gradient($secondaryColour, $primaryColour); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($secondaryColour, $primaryColour); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient($secondaryColour, $primaryColour);
+  background: linear-gradient($secondaryColour, $primaryColour); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$secondaryColour', endColorstr='$primaryColour');
+  zoom: 1;
+  }
 }
-
-.job_actions {
+/* Large desktop */
+@media (min-width: 980px) and (max-width: 1199px) {
+  header h2 {
+  border-left: 1px solid #C0C0C0;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  }
+  nav li a {
+  clear: none;
   float: left;
-  width: 255px;
-}
-
-.is_featured {
-  background: url(/assets/star.png) no-repeat 20px center;
-}
-
-
-.input.text {
-  label {
-    border-right: 4px solid #00E5B3;
-    border-bottom: none;
-
-    width: 35%;
-  }
-  input,
-  textarea {
-    clear: both;
-    width: 100%;
-    border: 4px solid $secondaryColour;
-  }
-}
-
-.right-fields {
-  float: right;
-  width: 55%;
-  label {
-    white-space: nowrap;
-  }
-}
-
-
-.submission {
-  clear: both;
-  padding-top: 0;
-  padding-bottom: 0;
-
-  p {
-    margin: 20px 0;
+  display: block;
+  padding: 10px 15px;
+  border-left: 1px solid $primaryColour;
+  border-right: 1px solid #000;
   }
 
-}
-
-
-.new_submission {
-  textarea {
-    clear: both;
-    width: 100%;
+  nav li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from($secondaryColour), to($primaryColour));
+  background: -webkit-linear-gradient($secondaryColour, $primaryColour); /* For Safari */
+  background: -o-linear-gradient($secondaryColour, $primaryColour); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($secondaryColour, $primaryColour); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient($secondaryColour, $primaryColour);
+  background: linear-gradient($secondaryColour, $primaryColour); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$secondaryColour', endColorstr='$primaryColour');
+  zoom: 1;
   }
-  cursor: pointer;
 }
+/* Extra-Large desktop */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  header h2 {
+  border-left: 1px solid #C0C0C0;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  }
 
-.cover_letter {
-  min-height: 100px;
+  nav li a {
+  clear: none;
+  float: left;
+  display: block;
+  padding: 10px 15px;
+  border-left: 1px solid $primaryColour;
+  border-right: 1px solid #000;
+  }
+
+  nav li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from($secondaryColour), to($primaryColour));
+  background: -webkit-linear-gradient($secondaryColour, $primaryColour); /* For Safari */
+  background: -o-linear-gradient($secondaryColour, $primaryColour); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($secondaryColour, $primaryColour); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient($secondaryColour, $primaryColour);
+  background: linear-gradient($secondaryColour, $primaryColour); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$secondaryColour', endColorstr='$primaryColour');
+  zoom: 1;
+  }
 }
+/* Extra-extra-Large desktop */
+@media (min-width: 1920px) {
+  header h2 {
+  border-left: 1px solid #C0C0C0;
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  }
+  nav li a {
+  clear: none;
+  float: left;
+  display: block;
+  padding: 10px 15px;
+  border-left: 1px solid $primaryColour;
+  border-right: 1px solid #000;
+  }
 
-
-.login_form input {
-  margin-bottom: 20px;
-}
-
-.login_form .button {
-  padding-left: 20px;
-  padding-right: 20px;
+  nav li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from($secondaryColour), to($primaryColour));
+  background: -webkit-linear-gradient($secondaryColour, $primaryColour); /* For Safari */
+  background: -o-linear-gradient($secondaryColour, $primaryColour); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($secondaryColour, $primaryColour); /* For Firefox 3.6 to 15 */
+  background: -ms-linear-gradient($secondaryColour, $primaryColour);
+  background: linear-gradient($secondaryColour, $primaryColour); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$secondaryColour', endColorstr='$primaryColour');
+  zoom: 1;
+  }
 }
