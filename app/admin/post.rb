@@ -20,7 +20,6 @@ ActiveAdmin.register Post do
       f.input :title
       f.input :body
       f.input :image
-      f.input :image_file_name
     end
     f.actions
   end
