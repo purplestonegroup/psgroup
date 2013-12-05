@@ -13,5 +13,15 @@ ActiveAdmin.register Post do
   #  permitted << :other if resource.something?
   #  permitted
   # end
+
+  # Putting more clean the input fields in active_admin:
+  form do |f|
+    f.inputs do 
+      f.input :title
+      f.input :body
+      f.input :image
+    end
+    f.actions
+  end
   
 end

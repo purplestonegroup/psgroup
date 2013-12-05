@@ -42,6 +42,12 @@ h2 {
   line-height: 1.5;
 }
 
+h2 a {
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 1;
+}
+
 h3 {
   font-size: 1.3em;
   font-weight: 700;
@@ -78,19 +84,22 @@ h4 {
     line-height: normal;
     padding: 8px 10px;
     font-family: $fontLato;
+    a {
+      color: #ffffff;
+    }
   }
 
   .button:hover,
-  button:hover,
+  button:hover, button a:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover,
   input[type="button"]:hover {
     color: #ffffff;
-    background: #dc143c;
+    background: red;
   }
 
   .button:active,
-  button:active,
+  button:active, button a:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active {
@@ -124,6 +133,10 @@ header {
   .row{
     margin-top: 20px;
   }
+  h2 {
+    color: $secondaryColour;
+    font-weight: 300;
+  }
 }
 
 #main_nav {
@@ -149,6 +162,7 @@ nav li a.last {
 nav a {
   color: #ffffff;
   font-size: 1em;
+  font-weight: 700;
 }
 
 .body_background {
@@ -211,6 +225,7 @@ margin-top: 30px;
     list-style-type: square;
     a {
       padding: 20px 0;
+      font-weight: 700;
     }
   }
 }
@@ -265,6 +280,7 @@ zoom: 1;
 border-bottom: 2px solid $primaryColour;
   h2, p {
     color: #ffffff;
+    font-weight: 300;
   }
 }
 
