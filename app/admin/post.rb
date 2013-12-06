@@ -14,6 +14,27 @@ ActiveAdmin.register Post do
   #  permitted
   # end
 
+
+  index do
+    column :rank
+    column :title
+    column :created_at
+    column :body
+    column :image_file_name
+    actions
+  end
+
+  # index :as => :blog do
+  #  title do |post|
+  #    h3 post.id, :class => 'id'
+  #    h2 post.title, :class => 'title'
+  #    span post.created_at, :class => 'created_at'
+  #    div post.image_file_name, :class => 'image'
+  #    h4 truncate(post.body, :length => 200), :class => 'body'
+  #  end
+  # end
+
+
   # Putting more clean the input fields in active_admin:
   form do |f|
     f.inputs do 
