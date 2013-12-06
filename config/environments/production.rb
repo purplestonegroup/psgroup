@@ -82,7 +82,6 @@ Group::Application.configure do
   # config/environments/production.rb
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_protocol => 'http',
     :s3_credentials => {
       :bucket => ENV['purplestone-img'],
       :access_key_id => ENV['AKIAIBZS3A73ARFOXFBA'],
