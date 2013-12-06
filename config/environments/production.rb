@@ -1,15 +1,5 @@
 Group::Application.configure do
 
-  # config/environments/production.rb
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV['purplestone-img'],
-      :access_key_id => ENV['AKIAIBZS3A73ARFOXFBA'],
-      :secret_access_key => ENV['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']
-    }
-  }
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -88,4 +78,15 @@ Group::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # config/environments/production.rb
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_protocol => 'http',
+    :s3_credentials => {
+      :bucket => ENV['purplestone-img'],
+      :access_key_id => ENV['AKIAIBZS3A73ARFOXFBA'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
