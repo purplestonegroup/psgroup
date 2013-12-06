@@ -84,7 +84,7 @@ Group::Application.configure do
     :storage => :s3,
     :s3_protocol => 'http',
     :s3_credentials => {
-      :bucket => ENV['AWS_BUCKET'],
+      :bucket => ENV['purplestone-img'],
       :access_key_id => ENV['AKIAIBZS3A73ARFOXFBA'],
       :secret_access_key => ENV['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']
     }
