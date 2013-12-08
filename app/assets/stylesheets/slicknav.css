@@ -98,15 +98,3 @@
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
 }
-.slicknav_menu {
-overflow: hidden;
-background: -webkit-gradient(linear, left top, left bottom, from($primaryColour), to(#000));
-background: -webkit-linear-gradient($primaryColour, #000); /* For Safari */
-background: -o-linear-gradient($primaryColour, #000); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient($primaryColour, #000); /* For Firefox 3.6 to 15 */
-background: -ms-linear-gradient($primaryColour, #000);
-background: linear-gradient($primaryColour, #000); /* Standard syntax */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$primaryColour', endColorstr='#000');
-zoom: 1;
-border-bottom: 1px solid $secondaryColour;
-}
