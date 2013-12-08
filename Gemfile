@@ -58,3 +58,7 @@ gem "activeadmin", github: "gregbell/active_admin"
 # add images and attachements o the sqlite3
 gem "paperclip"
 gem "aws-sdk"
+
+
+# varsion of ruby
+ruby "2.0.0"
