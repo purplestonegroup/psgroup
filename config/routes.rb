@@ -2,14 +2,8 @@ Group::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  get "contents/investment"
-  get "contents/partner"
-  get "contents/companies"
-  get "contents/contact"
-  get "contents/sitemap"
-  get "contents/terms"
-  get "contents/privacy"
-  
+
+  resources :contacts
   resources :posts
 
   root "posts#home"
@@ -18,7 +12,7 @@ Group::Application.routes.draw do
   get "/investment" => "contents#investment"
   get "/partner-with-us" => "contents#partner", as: "partner"
   get "/our-companies" => "contents#companies", as: "companies"
-  get "/contact" => "contents#contact"
+  get "/contact" => "contacts#new"
   get "/site-map" => "contents#sitemap", as: "sitemap"
   get "/terms-and-conditions" => "contents#terms", as: "terms"
   get "/privacy" => "contents#privacy"

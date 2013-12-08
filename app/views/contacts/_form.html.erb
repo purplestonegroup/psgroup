@@ -1,0 +1,12 @@
+<%= simple_form_for @contact do |f| %>
+	
+	<%= f.input :name %>
+	<%= f.input :email %>
+
+	<%= f.input :phone, as: :string %>
+	<%= f.input :subject, :label => "Subject" %>
+	<%= f.input :comments %>
+	
+	<%= f.button :submit, :label => "Submit" %>
+
+<% end %>
