@@ -4,7 +4,7 @@ class ContactMail < ActionMailer::Base
 
   def contact_email(contact)
     @contact = contact
-    @url  = 'http://example.com/login'
+    @url  = 'http://purplestonegroup.herokuapp.com/contacts/new'
     mail(to: @contact.email, subject: 'Message from the contact form of Purple Stone Group')
   end
 
