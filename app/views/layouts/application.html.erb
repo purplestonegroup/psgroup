@@ -31,18 +31,16 @@
 			</div>
 		</div> <!--  .row -->
 
-		<div id="main_nav">
-			<nav class="row">
-				<ul>
-					<li><%= link_to "HOME", root_path, class: "first" %></li>
-					<li><a href="#">INVESTMENT</a></li>
-					<li><a href="#">PARTNER WITH US</a></li>
-					<li><%= link_to "BLOG", posts_path %></li>
-					<li><a href="#">OUR COMPANIES</a></li>
-					<li><a class="last" href="#">CONTACT</a></li>
-				</ul>
-			</nav> <!--  .row -->
-		</div> <!--  #main_nav -->
+		<nav class="row">
+			<ul id="menu">
+				<li><%= link_to "HOME", root_path, class: "first" %></li>
+				<li><a href="#">INVESTMENT</a></li>
+				<li><a href="#">PARTNER WITH US</a></li>
+				<li><%= link_to "BLOG", posts_path %></li>
+				<li><a href="#">OUR COMPANIES</a></li>
+				<li><a class="last" href="#">CONTACT</a></li>
+			</ul>
+		</nav> <!--  .row -->
 
 	</header> <!--  .container -->
 
@@ -73,8 +71,8 @@
 					</div>
 				</div>
 
-				<nav id="main_nav" class="row">
-					<ul>
+				<nav class="row">
+					<ul id="menu">
 						<li><%= link_to "HOME", root_path, class: "first" %></li>
 						<li><a href="#">INVESTMENT</a></li>
 						<li><a href="#">PARTNER WITH US</a></li>
@@ -116,6 +114,10 @@
 			</footer>
 		</div> <!--  .container -->
 	</div>
-
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
 </body>
 </html>
