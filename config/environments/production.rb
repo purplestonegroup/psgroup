@@ -95,9 +95,9 @@ Group::Application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'purplestonegroup.com',
-    user_name:            '<username>',
-    password:             '<password>',
+    domain:               'google.com',
+    user_name:            ENV["EMAIL"],
+    password:             ENV["PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  
     }
