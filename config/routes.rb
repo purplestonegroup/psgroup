@@ -12,12 +12,12 @@ Group::Application.routes.draw do
   get "/investment" => "contents#investment"
   get "/partner-with-us" => "contents#partner", as: "partner"
   get "/our-companies" => "contents#companies", as: "companies"
-  get "/contact" => "contacts#new"
   get "/site-map" => "contents#sitemap", as: "sitemap"
   get "/terms-and-conditions" => "contents#terms", as: "terms"
   get "/privacy" => "contents#privacy"
 
-
+  get "/contact" => "contacts#new"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

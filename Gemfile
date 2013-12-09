@@ -59,6 +59,9 @@ gem "activeadmin", github: "gregbell/active_admin"
 gem "paperclip"
 gem "aws-sdk"
 
+#add recaptcha
+gem "recaptcha", require: "recaptcha/rails"
 
-# varsion of ruby
+
+# version of ruby
 ruby "2.0.0"

@@ -14,12 +14,15 @@ class ContactsController < ApplicationController
       if @contact.save
         # Tell the UserMailer to send an Email after save
         ContactMail.contact_email(@contact).deliver
+        # ContactMail.admin_email('directorgeneral@pstonemedia.com').deliver
  		
- 		flash[:success] = "Message was successfully sent."
+ 		   flash[:success] = "Message was successfully sent."
         
         format.html { redirect_to new_contact_path }
         format.json { render json: @contact, status: :created, location: @contact }
       else
+        flash[:error] = "Message was NOT successfully sent."
+
         format.html { render action: 'new' }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end

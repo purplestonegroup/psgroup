@@ -89,4 +89,17 @@ Group::Application.configure do
       :s3_host_name => 's3-eu-west-1.amazonaws.com'
     }
   }
+
+  # config the contact mail
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'purplestonegroup.com',
+    user_name:            '<username>',
+    password:             '<password>',
+    authentication:       'plain',
+    enable_starttls_auto: true  
+    }
+
 end
