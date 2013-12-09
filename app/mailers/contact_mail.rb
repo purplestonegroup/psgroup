@@ -22,12 +22,12 @@ class ContactMail < ActionMailer::Base
     )
   end
 
-  def admin_email
-
-  	@admin_email = "purplestonegroup.com@gmail.com"
+  def admin_email(contact)
         
+    @contact = contact
+
     mail(
-    	to: @admin_email,
+    	to: "purplestonegroup.com@gmail.com",
     	subject: 'Message from the contact form of Purple Stone Group',
     	from: "PurpleStoneGroup <purplestonegroup.com@gmail.com>",
       	return_path: "purplestonegroup.com@gmail.com",

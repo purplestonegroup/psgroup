@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
       if @contact.save
         # Tell the UserMailer to send an Email after save
         ContactMail.contact_email(@contact).deliver
-        ContactMail.admin_email(@admin_email).deliver
+        ContactMail.admin_email(@contact).deliver
  		
  		   flash[:success] = "Message was successfully sent."
         
