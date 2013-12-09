@@ -15,6 +15,10 @@ body {
   color: $primaryColour;
 }
 
+p {
+  font-size: 1.1em;  
+}
+
 a {
   color: $primaryColour;
   text-decoration: none;
@@ -219,6 +223,19 @@ nav a {
   color: #ffffff;
   font-size: 1em;
   font-weight: 700;
+}
+
+
+.flash {
+  background: $secondaryColour;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.flash.error {
+  background: #E55D2E;
 }
 
 .body_background {

@@ -1,11 +1,18 @@
 class ContactMail < ActionMailer::Base
   
+  # It’s important to pass those parameters to the mail method 
+  # because they will be the contents of the mail you’re about to send.
+  # There are other parameters available. It’s also very important
+  # to use the headers method because sendmail in some web hosts 
+  # only deliver mail when Return-Path is present.
+
   attr_accessor :name, :email, :phone, :subject, :comments
 
   default from: "purplestonegroup.com@gmail.com"
 
   headers = {'Return-Path' => 'purplestonegroup.com@gmail.com'}
 
+  # passing a method to send email to the user
   def contact_email(contact)
     
     @contact = contact
@@ -22,6 +29,7 @@ class ContactMail < ActionMailer::Base
     )
   end
 
+   # passing a method to send email to the admin
   def admin_email(contact)
         
     @contact = contact

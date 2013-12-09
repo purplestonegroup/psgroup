@@ -38,15 +38,20 @@ Group::Application.configure do
   #   authentication:       'plain',
   #   enable_starttls_auto: true  
   #   }
-
+  
+  # ActionMailer Config
   config.action_mailer.default_url_options = {
-    host: 'localhost:3000'
+    :host => 'localhost:3000'
   }
+  # change to true to allow email to be sent during development
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.sendmail_settings = {
-    location: '/usr/sbin/sendmail',
-    arguments: "-i -t -f purplestonegroup.com@gmail.com"
-  }
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.sendmail_settings = {
+  #   location: '/usr/sbin/sendmail',
+  #   arguments: "-i -t -f purplestonegroup.com@gmail.com"
+  # }
 
 end
