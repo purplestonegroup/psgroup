@@ -2,7 +2,7 @@ class ContactMail < ActionMailer::Base
   
   attr_accessor :name, :email, :phone, :subject, :comments
 
-  default to: 'purplestonegroup.com@gmail.com', from: 'purplestonegroup.com@gmail.com'
+  default from: "purplestonegroup.com@gmail.com"
 
   headers = {'Return-Path' => 'purplestonegroup.com@gmail.com'}
 
@@ -14,7 +14,7 @@ class ContactMail < ActionMailer::Base
     
     mail(
     	to: @contact.email,
-    	subject: 'Message from the contact form of Purple Stone Group'
+    	subject: 'Message from the contact form of Purple Stone Group',
     	from: "PurpleStoneGroup <purplestonegroup.com@gmail.com>",
       	return_path: "purplestonegroup.com@gmail.com",
       	date: Time.now,
