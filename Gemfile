@@ -62,6 +62,10 @@ gem "aws-sdk"
 #add recaptcha
 gem "recaptcha", require: "recaptcha/rails"
 
+# add the slider
+gem 'bxslider-rails'
+
 
 # version of ruby
 ruby "2.0.0"
+

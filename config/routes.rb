@@ -3,12 +3,14 @@ Group::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :posts
 
   scope '(:locale)' do
+    resources :posts
     resources :contacts
 
-    root "posts#home"
+    root 'posts#home'
+    get "/home" => "posts#home"
+    get "/contact" => "contacts#new"
 
     # static pages
     get "/investment" => "contents#investment"
@@ -17,8 +19,6 @@ Group::Application.routes.draw do
     get "/site-map" => "contents#sitemap", as: "sitemap"
     get "/terms-and-conditions" => "contents#terms", as: "terms"
     get "/privacy" => "contents#privacy"
-
-    get "/contact" => "contacts#new"
 
   end
   
