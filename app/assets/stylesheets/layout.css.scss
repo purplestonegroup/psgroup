@@ -224,7 +224,56 @@ nav a {
   font-size: 1em;
   font-weight: 700;
 }
+.header_right, .address {
+  padding-left: 20px;
+}
 
+.stay-in-touch-icons > a {
+  background: url(image_path('follow-us-icons.png')) no-repeat 0 0 transparent;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  text-align: left;
+  text-indent: -10000px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; 
+  margin: 0 10px 0 0; 
+}
+.stay-in-touch-icons > .twitter:hover {
+  background-position: 0 -30px;
+}
+.stay-in-touch-icons .facebook {
+  background-position: -36px 0;
+}
+.stay-in-touch-icons .facebook:hover {
+  background-position: -36px -30px;
+}
+.stay-in-touch-icons .google-plus {
+  background-position: -71px 0;
+}
+.stay-in-touch-icons .google-plus:hover {
+  background-position: -71px -30px;
+}
+.stay-in-touch-icons .linkedin {
+  background-position: -106px 0;
+}
+.stay-in-touch-icons > .linkedin:hover {
+  background-position: -106px -30px;
+}
+.stay-in-touch-icons .pinterest {
+  background-position: -142px 0;
+}
+.stay-in-touch-icons .pinterest:hover {
+  background-position: -142px -30px;
+}
+.stay-in-touch-icons .youtube {
+  background-position: -176px 0;
+}
+.stay-in-touch-icons .youtube:hover {
+  background-position: -176px -30px;
+}
 
 .flash {
   background: $secondaryColour;
