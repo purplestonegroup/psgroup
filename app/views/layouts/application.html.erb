@@ -3,6 +3,7 @@
 <head>
   <title>Purple Stone Group</title>
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -23,9 +24,13 @@
 
 			<div class="four columns offset-by-one">
 				<div class="header_right">
-					<phone>CALL 0207 247 1440</phone>
+					<phone class="muted"><span class="fa-stack">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+					</span> 0207 247 1440</phone>
 					<!--  <p>Select Language</p> -->
 					<div>
+					<div id="languages">
 						<%= form_tag home_path, class: 'locale', :method => :get do %>
 							<%= select_tag 'set_locale',
 								options_for_select(LANGUAGES, I18n.locale.to_s),
@@ -33,6 +38,7 @@
 							<%= submit_tag 'submit' %>
 							<%= javascript_tag "$('.locale input').hide()" %>
 						<% end %>
+					</div>
 					</div>
 					<div class="stay-in-touch-icons">
 						<a class="twitter" href="http://www.twitter.com/" target="_blank" title="Follow us on Twitter">Follow us on Twitter</a>
@@ -75,7 +81,7 @@
 				<div class="row">
 					<div class="footer_one">
 						<div class="seven columns about">
-							<h2>About Us</h2>
+							<h2><i class="fa fa-info-circle"></i> About Us</h2>
 							<h4>What is Purple Stone Group?</h4>
 							<p>Purple Stone Group is a company specialized in real estate, education, marketing and multimedia. The business group, through it's independent limited companies offers a lot of products and services that reflect the high satisfaction of the costumer.</p>
 						</div>
@@ -111,10 +117,13 @@
 
 					<div class="four columns offset-by-one">
 						<div class="address">
+							<p class="muted"><span class="fa-stack">
+							<i class="fa fa-square-o fa-stack-2x"></i>
+							<i class="fa fa-phone fa-stack-1x"></i>
+							</span> 0207 247 1440</p>
 							<p>101 Whitechapel High Street<br />
-							E1 7RA, London<br />
-							0207 247 1440<br />
-							Aldgate East</p>
+							E1 7RA, London<br />						
+							<i class="fa fa-map-marker"></i> Aldgate East</p>
 						</div>
 
 					</div>
@@ -125,14 +134,26 @@
 				</div>
 
 				<div class="row copy">
-					<p>&copy; <%= Date.today.year %> Purple Stone Group Ltd</p>
+					<p class="four columns">&copy; <%= Date.today.year %> Purple Stone Group Ltd</p>
+					<div>
+						<ul id="menu_footer" class="five columns">
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
 				</div>
+
 			</footer>
 		</div> <!--  .container -->
 	</div>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#menu').slicknav();
+	$('.bxslider').bxSlider({
+		mode: 'fade',
+		auto: true
+		});
 });
 </script>
 </body>
