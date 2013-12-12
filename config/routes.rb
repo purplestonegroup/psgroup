@@ -7,6 +7,7 @@ Group::Application.routes.draw do
   scope '(:locale)' do
     resources :posts
     resources :contacts
+    resources :contents
 
     root 'posts#home'
     get "/home" => "posts#home"
@@ -16,7 +17,6 @@ Group::Application.routes.draw do
     get "/investment" => "contents#investment"
     get "/partner-with-us" => "contents#partner", as: "partner"
     get "/our-companies" => "contents#companies", as: "companies"
-    get "/site-map" => "contents#sitemap", as: "sitemap"
     get "/terms-and-conditions" => "contents#terms", as: "terms"
     get "/privacy" => "contents#privacy"
 
