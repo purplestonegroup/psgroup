@@ -16,7 +16,8 @@ body {
 }
 
 p {
-  font-size: 1.1em;  
+  font-size: 1em;
+  font-weight: 400;
 }
 
 a {
@@ -44,6 +45,7 @@ h2 {
   font-size: 2em;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 h2 a {
@@ -56,6 +58,7 @@ h3 {
   font-size: 1.3em;
   font-weight: 700;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 h4 {
@@ -64,6 +67,33 @@ h4 {
   line-height: 1;
   margin: 10px 0;
 }
+hr {
+  color: $primaryColour;
+  background-color: $primaryColour;
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
+}
+note {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400;
+  color: $secondaryColour;
+}
+
+/* #Lists
+================================================== */
+
+  ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+  ul.square { list-style: square outside; }
+  ul.circle { list-style: circle outside; }
+  ul.disc { list-style: disc outside; }
+
+  .contact {
+    ul, ol {
+      margin-bottom: 20px;
+    }
+  }
 
 /* #Buttons
 ================================================== */
