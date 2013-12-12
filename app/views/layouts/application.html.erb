@@ -22,13 +22,12 @@
 				<h2><%= t('.slogan') %></h2>
 			</div>
 
-			<div class="four columns offset-by-one">
+			<div class="five columns header_right_side">
 				<div class="header_right">
 					<phone class="muted"><span class="fa-stack">
 					<i class="fa fa-circle fa-stack-2x"></i>
 					<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
 					</span> 0207 247 1440</phone>
-					<!--  <p>Select Language</p> -->
 					<div>
 					<div id="languages">
 						<%= form_tag home_path, class: 'locale', :method => :get do %>
@@ -55,12 +54,12 @@
 
 		<nav class="row">
 			<ul id="menu">
-				<li><%= link_to "HOME", home_path, class: "first" %></li>
+				<li><%= link_to t('.home'), home_path, class: "first" %></li>
 				<li><a href="#">INVESTMENT</a></li>
 				<li><a href="#">PARTNER WITH US</a></li>
 				<li><%= link_to "BLOG", posts_path %></li>
 				<li><a href="#">OUR COMPANIES</a></li>
-				<li><%= link_to "CONTACT", new_contact_path, class: "last" %></li>
+				<li><%= link_to t('.contact'), new_contact_path, class: "last" %></li>
 			</ul>
 		</nav> <!--  .row -->
 
@@ -81,26 +80,26 @@
 				<div class="row">
 					<div class="footer_one">
 						<div class="seven columns about">
-							<h2><i class="fa fa-info-circle"></i> About Us</h2>
-							<h4>What is Purple Stone Group?</h4>
-							<p>Purple Stone Group is a company specialized in real estate, education, marketing and multimedia. The business group, through it's independent limited companies offers a lot of products and services that reflect the high satisfaction of the costumer.</p>
+							<h2><i class="fa fa-info-circle"></i> <%= t('.aboutustitle') %></h2>
+							<h4><%= t('.whatis') %></h4>
+							<p><%= t('.aboutustext') %></p>
 						</div>
 						<div class="four columns offset-by-one affiliate">
-							<h2>Join Our Affiliate Programme Now!</h2>
-							<p>By sending an email to us you can Join to our Free Affiliate Programme and earn generous commissions from sales generated from referrals !</p>
-							<%= mail_to "lily@purplestoneacademy.com", "JOIN US", class: "button" %>				
+							<h2><%= t('.affiliatetitle') %></h2>
+							<p><%= t('.affiliatetext') %></p>
+							<%= mail_to "lily@purplestoneacademy.com", t('.affiliatebutton'), class: "button" %>				
 						</div>
 					</div>
 				</div>
 
 				<nav class="row">
 					<ul id="menu">
-						<li><%= link_to "HOME", root_path, class: "first" %></li>
+						<li><%= link_to t('.home'), root_path, class: "first" %></li>
 						<li><a href="#">INVESTMENT</a></li>
 						<li><a href="#">PARTNER WITH US</a></li>
 						<li><%= link_to "BLOG", posts_path %></li>
 						<li><a href="#">OUR COMPANIES</a></li>
-						<li><%= link_to "CONTACT", new_contact_path, class: "last" %></li>
+						<li><%= link_to t('.contact'), new_contact_path, class: "last" %></li>
 					</ul>
 				</nav> <!--  #main_nav --> <!--  .row -->
 
@@ -112,7 +111,7 @@
 					</h1>
 
 					<div class="four columns">
-						<h2>Get High Returns on your Investments</h2>
+						<h2><%= t('.slogan') %></h2>
 					</div>
 
 					<div class="four columns offset-by-one">
@@ -138,7 +137,7 @@
 					<div>
 						<ul id="menu_footer" class="five columns">
 							<li><a href="#">Site Map</a></li>
-							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
 							<li><a href="#">Privacy Policy</a></li>
 						</ul>
 					</div>
@@ -152,7 +151,8 @@ $(document).ready(function(){
 	$('#menu').slicknav();
 	$('.bxslider').bxSlider({
 		mode: 'fade',
-		auto: true
+		auto: true,
+		autostart: true
 		});
 });
 </script>
