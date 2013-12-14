@@ -13,7 +13,7 @@
 
 	<header class="container">
 		<div class="row">
-			<h1 class="three columns">
+			<h1 id="top" class="three columns">
 				<%= link_to(root_path) do %>
 				<%= image_tag "logo_psg.png" %>
 				<% end %>
@@ -76,7 +76,11 @@
 			<article class="row">
 				<%= yield %>
 			</article>
-
+			
+			<p id="back-top">
+				<a href="#top"><span></span>Back to top</a>
+			</p>
+			
 			<footer>
 				<div class="row">
 					<div class="footer_one">
@@ -155,6 +159,33 @@ $(document).ready(function(){
 		auto: true,
 		autostart: true
 		});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
 });
 </script>
 </body>
