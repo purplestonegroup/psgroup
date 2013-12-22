@@ -1,0 +1,95 @@
+fr:
+
+  layouts:
+   application:
+    slogan: "Obtenez un retour élevé sur votre investissement"
+    home: "ACCUEIL"
+    investment: "INVESTISSEMENTS"
+    partnerus: "DEVENEZ PARTENAIRE"
+    ourcompanies: "NOS SOCIETES"
+    contact: "CONTACTEZ NOUS"
+    aboutustitle: "A Propos De Nous"
+    whatis: "Quelle est Purple Stone Group?"
+    aboutustext: "Purple Stone Group est une société spécialisée dans l'immobilier, l'éducation, le marketing et le multimédia. Le groupe d'activités, à travers ses sociétés anonymes indépendantes offre beaucoup de produits et de services qui reflètent la grande satisfaction du costumier."
+    affiliatetitle: "Rejoignez notre programme d’adhésion!"
+    affiliatetext: "Inscrivez-vous  à notre programme d’adhésion gratuit et gagnez des commissions sur les ventes générées par vos recommandations!"
+    affiliatebutton: "REJOIGNEZ-NOUS"
+
+  posts:
+   home:
+    awebertitle: "Réclamez votre rapport GRATUIT!"
+    awebersubtitle: "10 Amazing Strategies To Invest In Property"
+
+  contacts:
+   form:
+    name: "Nom"
+    email: "Email"
+    phone: "Téléphone"
+    subject: "sujet"
+    comments: "commentaires"
+    send: "ENVOYER"
+   new:
+    title: "Contactez-nous"
+    title_html: "S'il vous plaît, n'hésitez pas à nous envoyer vos demandes de renseignements.<br /> Nous allons vous répondre dès que possible."
+    subtitle: "Ci-dessous vous trouverez notre emplacement dans Google Maps."
+
+  contents:
+    investment:
+      title: "Investissements"
+
+      subtitle1: "Purple Stone Group offre des possibilités d'investissement pour:"
+      text1: |
+        Investisseurs
+        Dirigeants d’entreprise
+        Propriétaires
+
+      title2: "Investisseurs"
+      subtitle2: "Etes-vous à la recherche d’un retour sur investissement élevé?"
+      subtitle21: "Purple Stone Group est à la recherche d'investisseurs pour s'associer à nous dans nos différents plans d'investissement. Les investisseurss se verront offrir:"
+      text2: |
+          Retour sur investissement élevé
+          Des investissements insensibles à la récession qui peuvent être gérés à partir de n’importe où dans le monde
+          Connaissance du retour sur investissement dès le premier jour 
+      moreinfo: "Pour plus d’informations, contactez Harry Sardinas par email à : generaldirector@purplestonegroup.com."
+
+      title3: "Dirigeants d’entreprise"
+
+      title4: "Propriétaires"
+      subtitle4: "Vendez votre maison rapidement* ou Obtenez une location garantie*"
+      text4: |
+        En raison d'une forte demande à laquelle nous faisons face pour la location de chambres aux jeunes professionnels et étudiants, Purple Stone Rooms cherche à élargir son portefeuille de propriétés à Londres.
+
+        Si vous êtes propriétaire et que vous êtes intéressé par la location de votre propriété, nous vous proposons:
+
+      text42: |
+          Entretien de la propriété gratuit**
+          Revenu locatif garanti pendant 3 à 5 ans, indépendamment des périodes de vide.
+          Pas de frais administratif
+          Si vos locaux répondent à nos critères, nous louons votre propriété dans les 24 heures après l'évaluation.
+
+      text43: "Si vous êtes intéressé de vendre votre propriété, et votre maison répond à nos exigences, nous l’achetons immédiatement. Pour plus d’informations, contactez Harry Sardinas par email à "
+
+      text44: "ou visitez www.purplestonerooms.com"
+
+      note1: "dans Londres seulement."
+      note2: "Pour toutes nos locations, nous payons toutes les factures d'entretien de la propriété pendant la durée, tant qu'elles sont inférieures £100.00."
+
+    partner:
+      title: "Devenez partenaire"
+      subtitle: "Purple Stone Group est à la recherche de Joint Venture Partners."
+      text: "Propuesta a las empresas de que le hacemos el marketing y todo el diseno por x porciento del profit. Please contact Harry Sardinas by email to"
+
+    companies:
+      title: "Nos Societes"
+      subtitle: "Purple Stone Group est un groupe de sociétés qui traitent le logement, l'éducation, les conseils de carrière et les services de medias."
+      text: "Purple Stone Group est composé de Purple Stone Rooms, Purple Stone Academy, Purple Stone Career Advice et Purple Stone Media."
+
+      rooms: "Purple Stone Rooms est une société qui propose un hébergement pour les jeunes à Londres."
+      academy: "Purple Stone Academy est une société  qui propose des leçons d’Anglais et autres cours pour jeunes étudiants adultes."
+      career: "Purple Stone Career Advice conseille principalement les jeunes sur la manière de trouver un premier emploi à Londres."
+      media: "Purple Stone Media offre des services de médias pour les petites entreprises."
+      
+
+
+
+

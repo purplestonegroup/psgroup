@@ -12,7 +12,7 @@ en:
     whatis: "What is Purple Stone Group?"
     aboutustext: "Purple Stone Group is a company specialized in real estate, education, marketing and multimedia. The business group, through it's independent limited companies offers a lot of products and services that reflect the high satisfaction of the costumer."
     affiliatetitle: "Join Our Affiliate Programme Now!"
-    affiliatetext: "By sending an email to us you can Join to our Free Affiliate Programme and earn generous commissions from sales generated from referrals !"
+    affiliatetext: "By sending an email to us you can Join to our Free Affiliate Programme and earn generous commissions from sales generated from referrals!"
     affiliatebutton: "JOIN US"
 
   posts:
@@ -29,5 +29,67 @@ en:
     comments: "Comments"
     send: "SEND"
    new:
+    title: "Contact Us"
     title_html: "Please, feel free to send us your enquires.<br />We'll reply to you as soon as possible."
     subtitle: "Below you can find our location in Google Maps."
+
+  contents:
+    investment:
+      title: "Investment"
+
+      subtitle1: "Purple Stone Group offers excellent investment opportunities for:"
+      text1: |
+        Investors
+        Business Owners
+        Landlords
+
+      title2: "Investors"
+      subtitle2: "Are You Looking For High Returns on Your Investment?"
+      subtitle21: "Purple Stone Group is looking for Investors to partner with us in our different investment plans. Investors will be offered:"
+      text2: |
+        High return on investment.
+        Recession proof investment that can be managed from any part of the world.
+        Knowledge of the return on investment from the first day.
+      moreinfo: "For more information please contact Harry Sardinas by email at: generaldirector@purplestonegroup.com."
+
+      title3: "Business Owners"
+
+      title4: "Landlords"
+      subtitle4: "Sell Your House Quickly* or Get Guaranteed Rent*"
+      text4: |
+        Due to a high demand that we are facing for room rentals from young professionals and students, Purple Stone Rooms is looking to expand the property portfolio in London.
+
+        If you are a landlord and you are interested in renting out your property, we offer you:
+
+      text42: |
+        Free property maintenance.**
+        Guaranteed rental income for 3 to 5 years, regardless of void periods.
+        No administration fees.
+        If your premises meet our criteria, we rent your property within 24 hours after valuation.
+
+      text43: "If you are interested to sell your property, and your house meets our demands, we will buy it immediately. For more information contact Harry Sardinas by email to"
+
+      text44: "Or visit www.purplestonerooms.com"
+
+      note1: "in London only."
+      note2: "In all our rentals we pay for all property maintenance bills during the term, as long as they are below £100.00."
+
+    partner:
+      title: "Partner With Us"
+      subtitle: "Purple Stone Group is looking for Joint Venture Partners."
+      text: "Propuesta a las empresas de que le hacemos el marketing y todo el diseno por x porciento del profit. Please contact Harry Sardinas by email to"
+
+    companies:
+      title: "Our Companies"
+      subtitle: "Purple Stone Group is a group of companies that deal with accommodation, education, career advice and media services."
+      text: "Purple Stone Group is made of Purple Stone Rooms, Purple Stone Academy, Purple Stone Career Advice and Purple Stone Media."
+
+      rooms: "Purple Stone Rooms is a company that provides accommodation for young people in London."
+      academy: "Purple Stone Academy is a company that offers English lessons and other courses for adult young students."
+      career: "Purple Stone Career Advice advises mainly young people about how to find their first job in London."
+      media: "Purple Stone Media offers media services for small businesses."
+      
+
+
+
+

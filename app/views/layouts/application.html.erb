@@ -56,10 +56,10 @@
 		<nav class="row">
 			<ul id="menu">
 				<li><%= active_link_to t('.home'), home_path, class: "first" %></li>
-				<li><%= active_link_to "INVESTMENT", investment_path, class: "link" %></li>
-				<li><%= active_link_to "PARTNER WITH US", partner_path, class: "link" %></li>
+				<li><%= active_link_to t('.investment'), investment_path, class: "link" %></li>
+				<li><%= active_link_to t('.partnerus'), partner_path, class: "link" %></li>
 				<li><%= active_link_to "BLOG", posts_path, class: "link" %></li>
-				<li><%= active_link_to "OUR COMPANIES", companies_path, class: "link" %></li>
+				<li><%= active_link_to t('.ourcompanies'), companies_path, class: "link" %></li>
 				<li><%= active_link_to t('.contact'), new_contact_path, class: "last" %></li>
 			</ul>
 		</nav> <!--  .row -->
@@ -100,10 +100,10 @@
 				<nav class="row">
 					<ul id="menu">
 						<li><%= active_link_to t('.home'), home_path, class: "first" %></li>
-						<li><%= active_link_to "INVESTMENT", investment_path, class: "link" %></li>
-						<li><%= active_link_to "PARTNER WITH US", partner_path, class: "link" %></li>
+						<li><%= active_link_to t('.investment'), investment_path, class: "link" %></li>
+						<li><%= active_link_to t('.partnerus'), partner_path, class: "link" %></li>
 						<li><%= active_link_to "BLOG", posts_path, class: "link" %></li>
-						<li><%= active_link_to "OUR COMPANIES", companies_path, class: "link" %></li>
+						<li><%= active_link_to t('.ourcompanies'), companies_path, class: "link" %></li>
 						<li><%= active_link_to t('.contact'), new_contact_path, class: "last" %></li>
 					</ul>
 				</nav> <!--  #main_nav --> <!--  .row -->

@@ -29,5 +29,67 @@ es:
     comments: "Comentarios"
     send: "ENVIAR"
    new:
+    title: "Contacto"
     title_html: "Por favor, no dude en enviarnos sus consultas. <br /> Le contestaremos en la mayor brevedad posible."
     subtitle: "A continuación puede encontrar nuestra ubicación en Google Maps."
+
+  contents:
+    investment:
+      title: "Inversiones"
+
+      subtitle1: "Purple Stone Group ofrece oportunidades de inversión para:"
+      text1: |
+        Inversores
+        Propietarios de negocios
+        Propietarios de casas
+
+      title2: "Inversores"
+      subtitle2: "¿Estás buscando altos beneficios en tus inversiones?"
+      subtitle21: "Purple Stone Group está buscando inversores para convertirse en nuestro socio en uno de nuestros diferentes planes de inversión. Se ofrece a los inversores:"
+      text2: |
+          Altos beneficios
+          Recession proof investment that can be managed from any part of the world
+          Conocimiento  de los beneficios de la inversión desde el primer día
+      moreinfo: "Para más información por favor contacta con Harry Sardinas en el email: generaldirector@purplestonegroup.com."
+
+      title3: "Propietarios de Negocios"
+
+      title4: "Propietarios"
+      subtitle4: "Vende tu casa rápido* o Consigue garantía de alquiler*"
+      text4: |
+        Debido a la alta demanda a la que se enfrentan los alquileres por parte de jóvenes profesionales y estudiantes, Purple Stone Rooms está buscando ampliar su catálogo de casas en London.
+
+        Si eres propietario y estás interesado  en alquilar tu casa, te ofrecemos:
+
+      text42: |
+          Mantenimiento gratuito de la casa**
+          Garantía de renta  de 3 a 5 años, independientemente de los periodos vacíos.
+          Sin tasas de administración
+          Si nuestras proposiciones cumplen tu criterio, alquilaremos tu propiedad en alrededor de 24 horas desde la evaluación.
+
+      text43: "Si estás interesado en vender tu propiedad, y tu casa cumple nuestras exigencias, te la compraremos inmediatamente. Para más información contacta a Harry Sardinas por e mail a: "
+
+      text44: "O visita www.purplestonerooms.com"
+
+      note1: "Solo en Londres."
+      note2: "En todos los alquileres pagamos las facturas de mantenimiento, siempre que sean por debajo de £100.00."
+
+    partner:
+      title: "Conviértete en nuestro socio"
+      subtitle: "Purple Stone Group esta buscando socios para empresa conjunta."
+      text: "Propuesta a las empresas de que le hacemos el marketing y todo el diseno por x porciento del profit. Por favor contacta Harry Sardinas por email en "
+
+    companies:
+      title: "Nuestras empresas"
+      subtitle: "Purple Stone Group es un grupo de empresas que se encarga de alojamiento, educación, orientación profesional y servicios multimedia."
+      text: "Purple Stone Group está formada por Purple Stone Rooms, Purple Stone Academy, Purple Stone Career Advice and Purple Stone Media."
+
+      rooms: "Purple Stone Rooms es una empresa que proporciona alojamiento a gente joven en Londres."
+      academy: "Purple Stone Academy es una compañía que ofrece clases de inglés y otros cursos para adultos y jóvenes estudiantes."
+      career: "Purple Stone Career Advice aconseja a jóvenes sobre como encontrar su primer trabajo en Londres."
+      media: "Purple Stone Media ofrece servicios multimedia a pequeñas empresas."
+      
+
+
+
+
