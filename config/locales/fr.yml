@@ -15,10 +15,12 @@ fr:
     affiliatetext: "Inscrivez-vous  à notre programme d’adhésion gratuit et gagnez des commissions sur les ventes générées par vos recommandations!"
     affiliatebutton: "REJOIGNEZ-NOUS"
 
+  shared:
+    aweberform:
+      awebertitle: "Réclamez votre rapport GRATUIT!"
+      awebersubtitle: "10 Amazing Strategies To Invest In Property"
+
   posts:
-   home:
-    awebertitle: "Réclamez votre rapport GRATUIT!"
-    awebersubtitle: "10 Amazing Strategies To Invest In Property"
 
   contacts:
    form:

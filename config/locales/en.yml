@@ -14,11 +14,13 @@ en:
     affiliatetitle: "Join Our Affiliate Programme Now!"
     affiliatetext: "By sending an email to us you can Join to our Free Affiliate Programme and earn generous commissions from sales generated from referrals!"
     affiliatebutton: "JOIN US"
+    
+  shared:
+    aweberform:
+      awebertitle: "Grab Your FREE Report"
+      awebersubtitle: "Maximise Your Return On Investment!"
 
   posts:
-   home:
-    awebertitle: "Grab Your FREE Report"
-    awebersubtitle: "Maximise Your Return On Investment!"
 
   contacts:
    form:

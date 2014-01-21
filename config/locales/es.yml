@@ -15,10 +15,12 @@ es:
     affiliatetext: "Envíenos un correo electrónico, usted puede unirse a nuestro programa de afiliados gratis y ganar grandes comisiones por las ventas generadas a partir de sus referencias!"
     affiliatebutton: "ÚNETE A NOSOTROS"
 
+  shared:
+    aweberform:
+      awebertitle: "Consigue ya tus informes GRATIS"
+      awebersubtitle: "Incremente el retorno de su inversión!"
+  
   posts:
-   home:
-    awebertitle: "Consigue ya tus informes GRATIS"
-    awebersubtitle: "Incremente el retorno de su inversión!"
 
   contacts:
    form:
