@@ -8,12 +8,16 @@
 
 <div class="row">
 	<div class="three columns">
-		<%= image_tag "logo_psr.png", width: '170', alt: "Purple Stone Rooms" %>
+		<%= link_to "http://www.purplestonerooms.com/" do %>
+			<%= image_tag "logo_psr.png", width: '170', alt: "Purple Stone Rooms" %>
+		<% end %>
 		<p><%= t('.rooms') %></p>
 	</div>
 
 	<div class="three columns offset-by-one">
-		<%= image_tag "logo_psa.png", width: '170', alt: "Purple Stone Academy" %>
+		<%= link_to "http://www.purplestoneacademy.com/" do %>
+			<%= image_tag "logo_psa.png", width: '170', alt: "Purple Stone Academy" %>
+		<% end %>
 		<p><%= t('.academy') %></p>
 	</div>
 </div>
@@ -22,12 +26,16 @@
 
 <div class="row">
 	<div class="three columns">
-		<%= image_tag "logo_psca.png", width: '220', alt: "Purple Stone Career Advice" %>
+		<%= link_to "http://www.purplestonecareeradvice.com/" do %>
+			<%= image_tag "logo_psca.png", width: '220', alt: "Purple Stone Career Advice" %>
+		<% end %>
 		<p><%= t('.career') %></p>
 	</div>
 
 	<div class="three columns offset-by-one">
-		<%= image_tag "logo_psm.png", width: '170', alt: "Purple Stone Media" %>
+		<%= link_to "http://www.pstonemedia.com/" do %>
+			<%= image_tag "logo_psm.png", width: '170', alt: "Purple Stone Media" %>
+		<% end %>
 		<p><%= t('.media') %></p>
 	</div>
 </div>
